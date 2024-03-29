@@ -1,0 +1,30 @@
+.item {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.item .text {
+  color: #ffffff;
+  font-family: "Formula1-Display-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.item:hover {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: #ff0000;
+}
+
+.item:hover .text {
+  margin-top: -2px;
+}

@@ -1,0 +1,25 @@
+.social {
+  align-items: center;
+  display: inline-flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.social .icon-instance-node {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.social .youtube-1 {
+  height: 24px !important;
+  position: relative !important;
+  width: 34.29px !important;
+}
+
+.social .twitter-1 {
+  height: 24px !important;
+  position: relative !important;
+  width: 23.47px !important;
+}

@@ -1,0 +1,735 @@
+.body {
+  font-family: "Formula1-Display-Wide", sans-serif !important;
+  margin: 0;
+  margin-top: 5px;
+  color: white;
+  background-color: black;
+}
+
+.content-container {
+  column-count: 2;
+  column-gap: 0px; /* Adjust the gap between columns as needed */
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-buttons a {
+  display: flex;
+  align-items: center;
+}
+
+.align-left {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.top-buttons .sign-in-button,
+.top-buttons .subscribe-button {
+  font-family: "Formula1-Regular", "Formula1", sans-serif;
+  margin: 3px;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+}
+
+.top-buttons .sign-in-button {
+  background-color: #1f1f27;
+}
+
+.top-buttons .subscribe-button {
+  margin-right: 20px;
+  background-color: #e10600;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  margin-top: 138px;
+}
+
+.colorful-video {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Styles for slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%; /* Ensure slideshow width matches video width */
+  margin-top: 10px; /* Adjust margin as needed */
+  margin-bottom: 20px;
+  margin-left: 10px;
+  flex-basis: 100%; /* Ensure slideshow takes full width on all screen sizes */
+  z-index: 1;
+}
+
+/* Styles for navigation arrows */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 16px;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.nav-link {
+  font-family: "Formula1-Regular", "Formula1", sans-serif;
+  color: white;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+#navbarText {
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-nav a {
+  margin-right: 15px;
+}
+
+.navbar-nav a.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 6.5px;
+  margin-right: 10px;
+}
+
+.navbar-nav a.nav-link:hover {
+  background-color: #e10600;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: rgb(25, 25, 25);
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: top;
+}
+
+header img {
+  margin-right: 10px;
+}
+
+.global-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.global-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.global-links li a {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.global-links li a:hover {
+  color: white;
+}
+
+.global-links li a:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  height: 3px;
+  background: white;
+}
+
+.F1-Tv {
+  background-color: rgb(196, 196, 196);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.header-title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#Fusion-F1,
+.fusion-f1 svg {
+  font-family: "Formula1-Display-Wide", "Formula1-Wide", sans-serif;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: white;
+  font-size: 24px;
+}
+
+.mv img {
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-header {
+  margin: 25px;
+}
+
+.nav-header a {
+  font-family: "Formula1-Regular", "Formula1", sans-serif;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  margin-right: 15px;
+}
+
+.nav-header a:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  height: 3px;
+  background: #e10600;
+}
+
+.fa-angle-right {
+  color: red;
+}
+
+.next .fa-angle-right {
+  color: white;
+}
+
+.white {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  vertical-align: middle;
+  margin-left: 120px;
+}
+
+.nav-secondary {
+  visibility: hidden;
+  background: rgb(25, 25, 25);
+  position: absolute;
+  left: 0;
+  z-index: 101;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  transition: visibility 0.1s ease;
+}
+
+.name.f1--xxs.f1-color--white.followed.f1-capitalize {
+  font-family: "Formula1-Regular", "Formula1", sans-serif;
+  align-items: center;
+}
+
+.name .firstname {
+  font-weight: 10;
+}
+
+.name .lastname {
+  font-weight: 600;
+}
+
+.info .number {
+  font-family: "Formula1-Regular", "Formula1", sans-serif;
+  color: white;
+}
+
+.driver {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.team {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.driver-info {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.flag {
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
+}
+
+.nav-list.drivers {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.name-wrapper {
+  position: relative;
+}
+
+.name-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.name-wrapper:hover::after {
+  width: 100%;
+}
+
+.teamname {
+  width: 120px;
+  display: inline;
+  position: relative;
+  color: white;
+}
+
+.teamname::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%; /* Initially set to 0% */
+  height: 3px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.teamname:hover::after {
+  width: 100%; /* Expand to 100% on hover */
+}
+
+.nav-list.drivers .column {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.nav-list.drivers .column:last-child {
+  margin-right: 0;
+}
+
+.nav-list.drivers ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list.drivers ul li {
+  margin-bottom: 15px;
+}
+
+.nav-list.drivers ul li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list.drivers ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.nav-list.teams {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-list.teams .column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.nav-list.teams .column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-f1 .nav-secondary {
+  display: block;
+  visibility: hidden;
+}
+
+.navbar-f1 .nav-link:hover + .nav-secondary,
+.navbar-f1 .nav-secondary:hover {
+  visibility: visible;
+}
+
+.nav-width {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.car-container {
+  width: 70%;
+  height: auto;
+  overflow: hidden;
+}
+
+.car {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.f1-video {
+  position: relative;
+  width: 100%;
+  max-width: 854px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  max-width: 854px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#Formula-1-Highlights {
+  font-family: "Formula1-Display-Wide", "Formula1-Wide", sans-serif;
+}
+
+a.video-text {
+  font-family: "Formula1-Display-Wide", "Formula1-Wide", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.video svg.highlights {
+  font-family: "Formula1-Display-Wide", "Formula1-Wide", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+.fadeOutAnimation {
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 854px) {
+  .video {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav-contents {
+    padding: 40px 30px;
+  }
+}
+
+.content-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 5px;
+}
+
+.articles-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  max-width: calc(100% - 854px);
+  margin-left: 40px;
+  width: 100%;
+  height: 975px;
+  max-height: 975px;
+  max-width: 40%;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.article {
+  background-color: rgb(25, 25, 25);
+  width: calc(50% - 10px);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.article:nth-child(2n) {
+  margin-right: 5px;
+}
+
+.article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.article a,
+.article h3 {
+  position: relative; /* Ensure anchor and heading elements stay in position */
+}
+
+.article h3 {
+  font-family: "Montserra-Light", sans-serif;
+  font-weight: normal;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.article-type {
+  background-color: rgb(25, 25, 25);
+  position: relative;
+  font-family: "Formula1-Display-Wide", "Formula1-Wide", sans-serif;
+  display: block;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 5px;
+  text-decoration: none;
+  color: red;
+  background-color: rgb(25, 25, 25);
+  font-size: x-small;
+}
+
+.article:hover h3 {
+  opacity: 0.7; /* Adjust the opacity value as needed */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+.article-type:hover a {
+  opacity: 0.7; /* Adjust the opacity value as needed */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+.article img:hover {
+  transform: scale(1.15); /* Increase scale by 15% on hover */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+  overflow: hidden;
+}
+
+.track-image {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 650px;
+  right: 5px;
+  z-index: 2;
+  border-radius: 15px;
+}
+
+.track-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.schedule {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  background: url("pexels-mahdi-bafande-15629018.jpg");
+  background-size: cover;
+}
+
+.standings img {
+  max-width: 100%; /* Limit the maximum width of the image */
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px;
+}
+
+.race-schedule {
+  position: relative;
+  width: 100%;
+  background: url("./Images/pexels-mahdi-bafande-15629018.jpg");
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+/* Media query for wider screens */
+@media screen and (min-width: 1200px) {
+  .articles-container {
+    width: 100%; /* Occupy full width */
+    max-width: 100%; /* Limit maximum width */
+  }
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 1025px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video,
+  .articles-container {
+    max-width: 100%;
+  }
+  .articles-container {
+    width: 80%;
+  }
+  .article {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .articles-container .article {
+    width: calc(33.33% - 10px);
+  }
+}
+
+/* Define a breakpoint to adjust layout when screen width is 1035 pixels or less */
+@media screen and (max-width: 1035px) {
+  /* Adjust the layout to stack the slideshow and driver-standings vertically */
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+
+  /* Adjust the width of the slideshow and driver-standings to occupy full width */
+  .slideshow-container {
+    width: 100%; /* Occupy full width */
+    max-width: 100%; /* Ensure no element overflows */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .track-image {
+    position: relative; /* Change position to relative */
+    top: auto; /* Reset top positioning */
+    right: auto; /* Reset right positioning */
+    margin-top: 20px; /* Add margin to position below articles */
+    width: calc(100% - 30px); /* Adjust width to fit column */
+  }
+}
+
+.item {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.item .text {
+  color: #ffffff;
+  font-family: "Formula1-Display-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.item:hover {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: #ff0000;
+}
+
+.item:hover .text {
+  margin-top: -2px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout-content {
+  padding: 20px;
+  flex-grow: 1;
+}

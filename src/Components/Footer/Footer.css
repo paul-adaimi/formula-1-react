@@ -1,0 +1,106 @@
+.footer {
+  background-color: #15151e;
+  height: 449px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-top {
+  align-items: center;
+  background-color: #38383f;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+}
+
+.footer .left {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 420px;
+}
+
+.footer .download-the {
+  color: #ffffff;
+  font-family: "Titillium Web-Regular", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 15px;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 0;
+}
+
+.footer .img {
+  display: block;
+  height: 40px;
+  position: relative;
+  width: 135px;
+}
+
+.footer .footer-partners {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer .row {
+  margin-top: 25px;
+  align-self: center;
+  align-items: flex-start;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  border-color: #38383f;
+  border-radius: 0px 0px 25px 0px;
+  border-right-style: solid;
+  border-right-width: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px 40px 0px;
+  width: 851px;
+}
+
+.footer .col-lg {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 12px;
+  position: relative;
+}
+
+.footer .bottom {
+  margin-top: 75px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .copyright {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 966px;
+}
+
+.footer .div {
+  color: #d0d0d2;
+  font-family: "Titillium Web", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 32px;
+  margin-top: -1px;
+  position: relative;
+  text-align: right;
+  white-space: nowrap;
+  width: fit-content;
+}

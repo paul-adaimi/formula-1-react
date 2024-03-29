@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Formula1-Wide';
+    src: url('./Fonts/Formula1-Wide.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Formula1-Regular';
+    src: url('./Fonts/Formula1-Regular-1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./Fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('./Fonts/Montserrat-ExtraLight.ttf') format('truetype');
+}

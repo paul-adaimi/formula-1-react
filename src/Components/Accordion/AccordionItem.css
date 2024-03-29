@@ -1,0 +1,111 @@
+.horizontal-accordion {
+  height: 300px;
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Ensure accordion items stay on the same line */
+}
+
+.choice {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+  align-items: center;
+  transition: width 0.2s;
+  border-radius: 10px;
+  border: none;
+}
+
+.expand {
+  width: 500px;
+}
+
+.small {
+  width: 250px;
+  background-color: #ddd !important;
+}
+
+.unset > div > p {
+  opacity: 0;
+}
+
+.expand > div {
+  transition-delay: 200ms;
+  opacity: 1;
+}
+
+.flag-accordion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 0px;
+}
+
+.acc-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice .acc-body {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.acc-body img {
+  width: 35%;
+  height: auto;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.acc-title img {
+  background-color: black;
+  width: 45%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.track-names img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.acc-footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.acc-h4 {
+  margin-top: 10px;
+  width: 100%;
+  font-family: "Formula1-Regular", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.flag-accordion {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
