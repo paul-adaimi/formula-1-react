@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import "./SignIn.css";
 import { Link } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 
-const SignIn = ({ onRegisterClick }) => {
+const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { login } = useAuth();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    login({
+      username: email,
+      password,
+    });
     console.log("Signing in with", email, password);
   };
 
@@ -20,7 +26,7 @@ const SignIn = ({ onRegisterClick }) => {
             Email
           </label>
           <input
-            type="email"
+            type="text"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

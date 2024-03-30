@@ -8,6 +8,7 @@ import Driver, { loader as driverLoader } from "./Pages/Driver";
 import SignIn from "./Pages/SignIn";
 import Register from "./Pages/Register";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { AuthProvider } from "./Context/AuthContext";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );
