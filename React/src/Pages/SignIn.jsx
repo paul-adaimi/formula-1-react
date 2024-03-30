@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./SignIn.css";
+import { Link } from "react-router-dom";
 
-const SignIn = () => {
+const SignIn = ({ onRegisterClick }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -43,6 +44,12 @@ const SignIn = () => {
         <button type="submit" className="signin-button">
           Sign In
         </button>
+        <p className="register-text">
+          Don't have an account?{" "}
+          <Link to="/register" className="register-link">
+            Register
+          </Link>
+        </p>
       </form>
     </div>
   );

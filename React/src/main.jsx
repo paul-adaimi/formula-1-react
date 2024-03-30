@@ -6,6 +6,7 @@ import Content from "./Pages/Content.jsx";
 import Layout from "./Pages/Layout.jsx";
 import Driver, { loader as driverLoader } from "./Pages/Driver";
 import SignIn from "./Pages/SignIn";
+import Register from "./Pages/Register";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/sign-in",
         element: <SignIn />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },

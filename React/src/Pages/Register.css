@@ -1,0 +1,51 @@
+.register-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* For a frosted glass effect */
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-title {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slight white background for contrast */
+  color: #fff; /* Text color */
+}
+
+.register-button {
+  padding: 0.75em;
+  border: none;
+  border-radius: 4px;
+  background-color: #e10600; /* Red color for the button, matching F1 theme */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #c00500; /* Slightly darker on hover */
+}
