@@ -45,9 +45,40 @@ export const AuthProvider = ({ children }) => {
       };
       localStorage.setItem("user", JSON.stringify(userInfo));
       setCurrentUser(userInfo);
-    } else {
-      console.error("Request failed with status: ", result.status);
+      return {
+        message: responseBody.message,
+      };
+    } else if (result.status === 400) {
+      return {
+        error: responseBody.error,
+      };
     }
+    return {
+      unkownError: "An unknown error occured",
+    };
+  };
+
+  const register = async (userCredentials) => {
+    const result = await fetch(`${SERVER_URL}/auth/register`, {
+      headers: { "Content-Type": "application/json" },
+      method: "POST",
+      body: JSON.stringify(userCredentials),
+    });
+
+    const responseBody = await result.json();
+
+    if (result.ok) {
+      return {
+        message: responseBody.message,
+      };
+    } else if (result.status === 400) {
+      return {
+        error: responseBody.error,
+      };
+    }
+    return {
+      unkownError: "An unknown error occured",
+    };
   };
 
   const logout = () => {
@@ -58,6 +89,7 @@ export const AuthProvider = ({ children }) => {
   const value = {
     currentUser,
     login,
+    register,
     logout,
     request,
   };

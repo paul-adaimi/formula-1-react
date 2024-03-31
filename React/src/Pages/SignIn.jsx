@@ -1,35 +1,47 @@
 import React, { useState } from "react";
 import "./SignIn.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
 
 const SignIn = () => {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const { login } = useAuth();
+  const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    login({
-      username: email,
+    setError("");
+
+    const result = await login({
+      username,
       password,
     });
-    console.log("Signing in with", email, password);
+
+    if (result.message) {
+      navigate("/");
+    } else if (result.error) {
+      setError(result.error);
+    } else {
+      setError(result.unknownError);
+    }
   };
 
   return (
     <div className="signin-container">
       <form onSubmit={handleSubmit} className="signin-form">
         <h2 className="signin-title">Sign In</h2>
+        {error && <div className="error-message">{error}</div>}
         <div className="input-group">
-          <label htmlFor="email" className="input-label">
-            Email
+          <label htmlFor="username" className="input-label">
+            Username
           </label>
           <input
             type="text"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            id="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             className="input-field"
             required
           />

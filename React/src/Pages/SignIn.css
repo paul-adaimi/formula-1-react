@@ -53,10 +53,17 @@
 .register-link {
   cursor: pointer;
   text-decoration: underline;
-  color: #fff; /* Adjust if you have a specific color scheme */
+  color: #fff;
   font-weight: bold;
 }
 
 .register-link:hover {
-  text-decoration: none; /* Optional style for hover effect */
+  text-decoration: none;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  text-align: center;
 }

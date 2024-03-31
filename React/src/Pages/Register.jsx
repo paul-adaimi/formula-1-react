@@ -1,32 +1,68 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Register.css";
+import { useAuth } from "../Context/AuthContext";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
 
-  const handleSubmit = (event) => {
+  const { register } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Handle the registration logic here
-    console.log(
-      "Register with",
-      firstName,
-      lastName,
-      email,
+    setError("");
+
+    if (!firstName) {
+      setError("First name is required.");
+      return;
+    }
+    if (!lastName) {
+      setError("Last name is required.");
+      return;
+    }
+    if (!username) {
+      setError("Username is required.");
+      return;
+    }
+    if (!password) {
+      setError("Password is required.");
+      return;
+    }
+    if (!confirmPassword) {
+      setError("Confirming password is required.");
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      setError("Passwords do not match.");
+      return;
+    }
+
+    const result = await register({
+      username,
       password,
-      confirmPassword
-    );
-    // Make sure to validate the passwords match and handle errors
+    });
+
+    if (result.message) {
+      navigate("/sign-in");
+    } else if (result.error) {
+      setError(result.error);
+    } else {
+      setError(result.unknownError);
+    }
   };
 
   return (
     <div className="register-container">
       <form onSubmit={handleSubmit} className="register-form">
         <h2 className="register-title">Register</h2>
+        {error && <div className="error-message">{error}</div>}
         <div className="input-group">
           <label htmlFor="first-name" className="input-label">
             First Name
@@ -54,14 +90,14 @@ const Register = () => {
           />
         </div>
         <div className="input-group">
-          <label htmlFor="email" className="input-label">
-            Email
+          <label htmlFor="username" className="input-label">
+            Username
           </label>
           <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="text"
+            id="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             className="input-field"
             required
           />
