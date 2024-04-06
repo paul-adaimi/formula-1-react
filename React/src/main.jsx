@@ -9,6 +9,7 @@ import SignIn from "./Pages/SignIn";
 import Register from "./Pages/Register";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthProvider } from "./Context/AuthContext";
+import Articles from "./Pages/Articles";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/live-timing",
         element: <h1>Live Timing</h1>,
+      },
+      {
+        path: "/my-articles",
+        element: <Articles />,
       },
       {
         path: "/driver/:driverId",

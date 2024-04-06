@@ -45,6 +45,8 @@ const Register = () => {
     }
 
     const result = await register({
+      firstName,
+      lastName,
       username,
       password,
     });

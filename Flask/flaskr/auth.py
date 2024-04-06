@@ -24,10 +24,16 @@ def register():
     data = request.json
     username = data.get('username')
     password = data.get('password')
+    firstName = data.get('firstName')
+    lastName = data.get('lastName')
     db = get_db()
     error = None
 
-    if not username:
+    if not firstName:
+        error = 'First Name is required'
+    elif not lastName:
+        error = 'Last Name is required'
+    elif not username:
         error = 'Username is required.'
     elif not password:
         error = 'Password is required.'
@@ -35,8 +41,8 @@ def register():
     if error is None:
         try:
             db.execute(
-                "INSERT INTO user (username, password) VALUES (?, ?)",
-                (username, generate_password_hash(password)),
+                "INSERT INTO user (username, password, firstname, lastname) VALUES (?, ?, ?, ?)",
+                (username, generate_password_hash(password), firstName, lastName),
             )
             db.commit()
         except db.IntegrityError:
@@ -69,11 +75,15 @@ def login():
 
         token = jwt.encode({
             'user': username,
+            'firstName': user['firstname'],
+            'lastName': user['lastname'],
             'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1)
         }, app.config['SECRET_KEY'], algorithm="HS256")
 
         return jsonify({
             "message": "User signed in successfully",
+            "firstName": user['firstname'],
+            'lastName': user['lastname'],
             "token": token
         }), 201
     return jsonify({"error": error}), 400

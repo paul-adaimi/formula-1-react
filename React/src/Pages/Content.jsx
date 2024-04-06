@@ -1,5 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import AccordionH from "../Components/Accordion/AccordionH";
+import Articles from "../Components/Articles";
 
 function Content() {
   return (
@@ -131,76 +132,7 @@ function Content() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="articles-container">
-        <div className="article">
-          <img src="Mercedes.avif" alt="Mercedes Formula 1 car" />
-          <div className="article-type">Technical</div>
-          <h3>
-            FIRST LOOK: Mercedes unveil their 2024 F1 car ahead of Silverstone
-            shakedown
-          </h3>
-        </div>
-        <div className="article">
-          <img src="Day2Bahrain.avif" alt="Lewis Hamilton" />
-          <div className="article-type">
-            <p>News</p>
-          </div>
-          <h3>Who’s driving on Day 2 of pre-season testing in Bahrain?</h3>
-        </div>
-        <div className="article">
-          <img src="RedBullVerstappen.avif" alt="Max Verstappen" />
-          <div className="article-type">
-            <p>News</p>
-          </div>
-          <h3>
-            Red Bull ‘got the answers we needed to’ after first day of 2024
-            testing for Verstappen
-          </h3>
-        </div>
-        <div className="article">
-          <img src="RedBull.avif" alt="RedBull Formula 1 car" />
-          <div className="article-type">
-            <p>Technical</p>
-          </div>
-          <h3>
-            TECH ANALYSIS: Why Red Bull's dominant opening day of testing wasn't
-            quite all it seemed
-          </h3>
-        </div>
-        <div className="article">
-          <img src="Testing.avif" alt="Testing debrief" />
-          <div className="article-type">
-            <p>Feature</p>
-          </div>
-          <h3>
-            TESTING DEBRIEF: The surprising – and less surprising – teams who
-            came out fighting on Day 1 of 2024 testing
-          </h3>
-        </div>
-        <div className="article">
-          <img src="Ferrari.avif" alt="Ferrari formula 1 car" />
-          <div className="article-type">
-            <p>News</p>
-          </div>
-          <h3>
-            Leclerc and Sainz give their verdicts on where Ferrari stand
-            relative to Red Bull
-          </h3>
-        </div>
-
-        <div className="track-image">
-          <img
-            src="red-bull-and-ferrari-on-track-during-monaco-grand-prix-planet-f1.jpg"
-            alt="RedBull and Ferrari racing in Monaco"
-            width="1031"
-          />
-          <img
-            src="hungaroring-the-hungarian-f1-race-track-hungary.jpg"
-            alt="RedBull and Ferrari racing in Monaco"
-            width="1031"
-          />
-        </div>
-      </div>
+      <Articles />
       <div className="race-schedule">
         <div className="schedule">
           <AccordionH />

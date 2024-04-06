@@ -37,7 +37,9 @@ function MainMenu() {
   return (
     <div className="main-container">
       <header>
-        <img src="F1.jpeg" alt="Formula 1 logo with background pattern" />
+        <Link to="/">
+          <img className="homepage" src="F1.jpeg" />
+        </Link>
         <div>
           <div className="header-title">
             <svg
@@ -75,27 +77,27 @@ function MainMenu() {
               <div className="collapse navbar-collapse" id="navbarText">
                 <div className="navbar-nav ml-auto">
                   <a className="nav-link" href="#" style={{ color: "white" }}>
-                    Latest <i className="fas fa-angle-down fa-xs"></i>
+                    Nothing <i className="fas fa-angle-down fa-xs"></i>
                   </a>
                   <Link
                     to="/video"
                     className="nav-link"
                     style={{ color: "white" }}
                   >
-                    Video
+                    Nothing 2
                   </Link>
                   <Link
                     to="/f1unlocked"
                     className="nav-link"
                     style={{ color: "white" }}
                   >
-                    F1 Unlocked
+                    Nothing 3
                   </Link>
                   <a className="nav-link" href="#" style={{ color: "white" }}>
-                    Schedule <i className="fas fa-angle-down fa-xs"></i>
+                    Nothing 4 <i className="fas fa-angle-down fa-xs"></i>
                   </a>
                   <a className="nav-link" href="#" style={{ color: "white" }}>
-                    Results <i className="fas fa-angle-down fa-xs"></i>
+                    Nothing 5 <i className="fas fa-angle-down fa-xs"></i>
                   </a>
                   <a className="nav-link" href="#" style={{ color: "white" }}>
                     Drivers <i className="fas fa-angle-down fa-xs"></i>
@@ -153,14 +155,14 @@ function MainMenu() {
                     href="#"
                     style={{ color: "white" }}
                   >
-                    Gaming <i className="fas fa-angle-down fa-xs"></i>
+                    Nothing 6 <i className="fas fa-angle-down fa-xs"></i>
                   </a>
                   <Link
                     to="/live-timing"
                     className="nav-link"
                     style={{ color: "white" }}
                   >
-                    Live Timing
+                    Nothing 7
                   </Link>
                 </div>
               </div>

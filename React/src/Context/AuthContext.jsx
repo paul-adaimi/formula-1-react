@@ -7,22 +7,39 @@ const AuthContext = createContext();
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
+  const [user, setUser] = useState({});
 
   useEffect(() => {
     const user = localStorage.getItem("user");
     if (user) {
-      setCurrentUser(JSON.parse(user));
+      setUser(JSON.parse(user));
     }
   }, []);
 
-  const request = async ({ url, method, body }) => {
+  const requestNoAuth = async ({ url, method = "GET", body }) => {
     const result = await fetch(`${SERVER_URL}/${url}`, {
       method,
-      headers: {
+      body,
+    });
+
+    return result;
+  };
+
+  const request = async ({ url, method = "GET", body, isJson = true }) => {
+    console.log(`${SERVER_URL}/${url}`);
+    let headers = {
+      Authorization: `Bearer ${user.token}`,
+    };
+    if (isJson) {
+      headers = {
+        ...headers,
         "Content-Type": "application/json",
-        Authorization: `Bearer ${currentUser.token}`,
-      },
+      };
+    }
+
+    const result = await fetch(`${SERVER_URL}/${url}`, {
+      method,
+      headers,
       body,
     });
 
@@ -41,10 +58,12 @@ export const AuthProvider = ({ children }) => {
     if (result.ok) {
       const userInfo = {
         ...userCredentials,
+        firstName: responseBody.firstName,
+        lastName: responseBody.lastName,
         token: responseBody.token,
       };
       localStorage.setItem("user", JSON.stringify(userInfo));
-      setCurrentUser(userInfo);
+      setUser(userInfo);
       return {
         message: responseBody.message,
       };
@@ -83,15 +102,16 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     localStorage.removeItem("user");
-    setCurrentUser(null);
+    setUser(null);
   };
 
   const value = {
-    currentUser,
+    user,
     login,
     register,
     logout,
     request,
+    requestNoAuth,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

@@ -13,7 +13,14 @@
 
 .top-buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-buttons .right {
+  display: flex;
   align-items: center;
 }
 
@@ -28,7 +35,7 @@
 }
 
 .top-buttons .sign-in-button,
-.top-buttons .subscribe-button {
+.top-buttons .logout-button {
   font-family: "Formula1-Regular", "Formula1", sans-serif;
   margin: 3px;
   color: white;
@@ -43,8 +50,7 @@
   background-color: #1f1f27;
 }
 
-.top-buttons .subscribe-button {
-  margin-right: 20px;
+.top-buttons .logout-button {
   background-color: #e10600;
 }
 
@@ -118,7 +124,6 @@
   color: white;
   text-decoration: none;
   padding: 6.5px;
-  margin-right: 10px;
 }
 
 .navbar-nav a.nav-link:hover {
@@ -142,6 +147,9 @@ header img {
 .global-links ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .global-links li {
@@ -237,7 +245,6 @@ header img {
 
 .arrow {
   vertical-align: middle;
-  margin-left: 120px;
 }
 
 .nav-secondary {
@@ -325,6 +332,10 @@ ul {
 
 .name-wrapper:hover::after {
   width: 100%;
+}
+
+.teamname-sub-wrapper {
+  display: flex;
 }
 
 .teamname {
@@ -732,4 +743,20 @@ a.video-text {
 .layout-content {
   padding: 20px;
   flex-grow: 1;
+}
+
+.article-creator {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.homepage {
+  height: 100%;
+  width: 150px;
 }
