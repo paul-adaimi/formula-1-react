@@ -80,11 +80,11 @@ function MainMenu() {
                     Nothing <i className="fas fa-angle-down fa-xs"></i>
                   </a>
                   <Link
-                    to="/video"
+                    to="/standings"
                     className="nav-link"
                     style={{ color: "white" }}
                   >
-                    Nothing 2
+                    Standings
                   </Link>
                   <Link
                     to="/f1unlocked"

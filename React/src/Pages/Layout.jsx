@@ -18,7 +18,7 @@ function Layout() {
         <div className="layout-content">
           <Outlet />
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </PostsProvider>
   );

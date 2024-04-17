@@ -10,6 +10,7 @@ import Register from "./Pages/Register";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthProvider } from "./Context/AuthContext";
 import Articles from "./Pages/Articles";
+import Standings from "./Pages/Standings";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
         element: <Content />,
       },
       {
-        path: "/video",
-        element: <h1>Video</h1>,
+        path: "/standings",
+        element: <Standings />,
       },
       {
         path: "/f1unlocked",
