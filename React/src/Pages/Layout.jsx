@@ -3,8 +3,12 @@ import MainMenu from "../Components/MainMenu";
 import { Outlet } from "react-router";
 import Footer from "../Components/Footer/Footer";
 import { PostsProvider } from "../Context/PostsContext";
+import { useLocation } from "react-router-dom";
 
 function Layout() {
+  const location = useLocation();
+  const isStandings = location.pathname === "/standings";
+  console.log(location);
   return (
     <PostsProvider>
       <div className="layout">
@@ -18,7 +22,7 @@ function Layout() {
         <div className="layout-content">
           <Outlet />
         </div>
-        {/* <Footer /> */}
+        {!isStandings && <Footer />}
       </div>
     </PostsProvider>
   );

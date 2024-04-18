@@ -15,7 +15,6 @@ const Standings = () => {
       }
       const data = await response.json();
       setDrivers(data.MRData.StandingsTable.StandingsLists[0].DriverStandings);
-      console.log(drivers);
     } catch (error) {
       console.log(error.message);
     }
@@ -146,8 +145,6 @@ function getTeamColor(teamName) {
 
 function extractRelevantData(driver) {
   if (!driver) return {};
-
-  console.log("driver", driver);
 
   return {
     rank: driver.position,

@@ -1,0 +1,244 @@
+.driver-details {
+  width: 100%;
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0px 0px 40px;
+  position: relative;
+}
+
+.driver-details .div {
+  background-color: #ffffff;
+  height: 637px;
+  position: relative;
+  width: 100%;
+}
+
+.driver-details .driver-stats {
+  margin-top: 100px;
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  height: 465px;
+  justify-content: space-between;
+  left: 634px;
+  position: absolute;
+  top: 40px;
+}
+
+.driver-details .extra-info {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 89.59px;
+  position: relative;
+}
+
+.driver-details .brand-logo {
+  height: 125px;
+  object-fit: cover;
+  position: relative;
+  width: 187.41px;
+}
+
+.driver-details .quicklinks {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 5px 0px;
+  position: relative;
+}
+
+.driver-details .text-wrapper {
+  color: #ff1e00;
+  font-family: "Formula1-Display-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.driver-details .text-wrapper-2 {
+  color: #ff1e00;
+  font-family: "Formula1-Display-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.driver-details .stat-list {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.driver-details .stat-list-row {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 418px;
+}
+
+.driver-details .stat-key {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding: 4px 0px 4px 10px;
+  position: relative;
+  width: 275px;
+}
+
+.driver-details .stat-key-2 {
+  color: #000000;
+  font-family: "Formula1-Display-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.driver-details .stat-value {
+  color: #000000;
+  font-family: "Titillium Web", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+  text-align: end;
+}
+
+.driver-details .driver-title {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  height: 602px;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.driver-details .driver-image {
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 0px 0px 20px 0px;
+  display: flex;
+  gap: 10px;
+  height: 452px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.driver-details .name {
+  height: 640px;
+  margin-bottom: -188px;
+  object-fit: cover;
+  position: relative;
+  width: 594px;
+}
+
+.driver-details .div-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  padding: 0px 40px;
+  position: relative;
+}
+
+.driver-details .driver-number {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 15px;
+  justify-content: center;
+  position: relative;
+}
+
+.driver-details .text-wrapper-3 {
+  color: #808080;
+  font-family: "Formula1-Display-Regular", Helvetica;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.driver-details .icn-flag {
+  height: 36px;
+  position: relative;
+  width: 48px;
+}
+
+.driver-details .text-wrapper-4 {
+  color: #000000;
+  font-family: "Formula1-Display-Bold", Helvetica;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.driver-details .biography {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  height: 888px;
+  padding: 40px;
+  position: relative;
+}
+
+.driver-details .text-wrapper-5 {
+  color: #000000;
+  font-family: "Formula1-Display-Bold", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.driver-details .he-s-max-by-name-and {
+  color: #000000;
+  font-family: "Titillium Web", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+}

@@ -1,5 +1,6 @@
 import { drivers } from "../data";
 import { useLoaderData } from "react-router";
+import DriverDetails from "../Components/DriverDetails/DriverDetails";
 
 export async function loader({ params }) {
   const driver = drivers.find(
@@ -15,7 +16,8 @@ function Driver() {
   return (
     <div>
       <h1>
-        {driver.firstName} {driver.lastName}
+        <DriverDetails driver={driver} />
+        {/* {driver.firstName} {driver.lastName} */}
       </h1>
     </div>
   );
