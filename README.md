@@ -1,4 +1,4 @@
-# CS 5610  Final Project Documentation
+# CS 5610  Final Project README
 
 **Authors:** Sam Treadwell, Paul Adaimi, Rashaad Mirza  
 **Date:** 04/22/2024
