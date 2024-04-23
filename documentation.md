@@ -69,15 +69,23 @@ We believe that we scoped the project appropriately in our proposal.md and plan.
 
 Paul found the most compelling aspect of the project to be teaching other team members about React. By sharing his knowledge and expertise, Paul played a crucial role in empowering the team to leverage React effectively, fostering collaboration and skill development among team members.
 
+Sam mentioned that he felt the most compelling part of the project was working on a full-stack team project. He highlighted the experience of delegating tasks as a team and collaborating on reimagining the Formula 1 website. According to him, it was compelling to experiment with new designs such as the accordion, carousel with cards, the shuffle carousel, iFrame 3D embed, and connecting to the API.
+
 - ### Most Challenging Part of the Project
 
-Fixing CSS to Meet Project Needs: Another challenging aspect was refining and customizing CSS to align with the project's design requirements. Addressing CSS issues and ensuring consistency and responsiveness across different screen sizes demanded attention to detail and iterative refinement to achieve the desired visual and functional outcomes.
+A challenging aspect was refining and customizing CSS to align with the project's design requirements. Addressing CSS issues and ensuring consistency and responsiveness across different screen sizes demanded attention to detail and iterative refinement to achieve the desired visual and functional outcomes.
+
+Sam noted that the most challenging aspect of the project was integrating all of their ideas into a finished product. He explained that since only one of their teammates was familiar with the React framework, all of the code and designs had to be translated. Ideally, he mentioned, they would have preferred more time for everyone to learn React so they could design, build, and develop together. Additionally, he highlighted the challenge of connecting to the API and ensuring that the JavaScript was functioning correctly.
 
 - ### Learning Experiences of Team Members
 
-Sam's learning experiences included:
+Sam's learning experiences:
 
-<content>
+Firstly, he emphasized the importance of project design, noting that decisions regarding layout, framework, and architecture made at the outset significantly impact future development. He highlighted the choice of using flexbox over grid for layout and migrating to React as pivotal decisions in making their project modular, dynamic, and scalable.
+
+Secondly, he discussed the value of utilizing design templates and existing libraries and resources, citing MDBootstrap, React, f1assets.com, Codepen, and others as crucial in efficiently designing, iterating, and progressing their project.
+
+Lastly, he reflected on the importance of project management and adjusting scope as the project progressed. He mentioned successful collaboration on Teams and detailed project proposals. However, he noted areas for improvement, such as ensuring consistent weekly meetings for effective communication and addressing questions and roadblocks. He stressed the significance of keeping everyone on the same page with design and development decisions. Despite challenges, he concluded that they successfully met the scope of their project proposal by integrating an API, enhancing the Flask backend to allow user contributions, and delivering a visually appealing redesign of the Formula 1 website.
 
 Paul made significant progress in several areas, including:
 
